@@ -21,6 +21,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -74,6 +77,28 @@
               </div>
               
             </div>
+            <div class="row">
+
+              <link rel="stylesheet" type="text/css" href="class/fontawesome-iconpicker/css/fontawesome-iconpicker.min.css">
+              <script type="text/javascript" src="class/fontawesome-iconpicker/js/fontawesome-iconpicker.min.js"></script>
+              <script type='text/javascript'>
+                $(document).ready(function(){
+                  $('.icp').iconpicker();
+                });
+              </script>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>圖示</label>
+                  <div class="input-group">
+                    <input data-placement="bottomRight" class="form-control icp icp-auto" value="fa-archive" type="text" />
+                    <span class="input-group-addon"></span>
+                  </div>
+                </div>      
+              </div>
+              
+            </div>
+
             <hr>
             <div class="text-center">
               <input type="hidden" name="op" value="op_insert">
@@ -90,8 +115,6 @@
     	
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     
 		<!-- Latest compiled and minified JavaScript -->
