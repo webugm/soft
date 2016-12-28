@@ -55,7 +55,7 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label>input - password</label>
-                  <input type="password" name="password" value="" id="password" class="form-control">
+                  <input type="password" name="password" value="" id="password" class="form-control" placeholder="密碼">
                 </div>
               </div>
               <div class="col-md-2">            
@@ -79,6 +79,21 @@
               
             </div>
 
+            <div class="row">
+              <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+              <script>
+                $(function() {
+                  CKEDITOR.replace('content');
+                });
+              </script>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>網頁編輯器</label>
+                  <textarea name="content" id="content" class="form-control" rows="3" placeholder="內容"></textarea>
+                </div>
+              </div>
+              
+            </div>
             <div class="row">
 
               <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
