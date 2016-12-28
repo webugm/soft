@@ -49,7 +49,7 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label>input - text</label>
-                  <input type="text" name="account" value="" id="account" class="form-control">
+                  <input type="text" name="account" value="" id="account" class="form-control" placeholder="帳號">
                 </div>
               </div>
               <div class="col-md-4">
@@ -61,7 +61,7 @@
               <div class="col-md-2">            
                 <div class="form-group">
                   <label style="display:block;">input - radio</label>
-                  <input type="radio" name="enable" id="enable_1" value="1" checked="">
+                  <input type="radio" name="enable" id="enable_1" value="1" checked>
                   <label for="enable_1">啟用</label>&nbsp;&nbsp;
                   <input type="radio" name="enable" id="enable_0" value="0">
                   <label for="enable_0">停用</label>
@@ -72,12 +72,13 @@
 
               <div class="col-md-12">
                 <div class="form-group">
-                  <label>textarea</label>
-                  <textarea name="content" id="content" class="form-control" rows="3"></textarea>
+                  <label>textarea  多行</label>
+                  <textarea name="summary" id="summary" class="form-control" rows="3" placeholder="摘要"></textarea>
                 </div>
               </div>
               
             </div>
+
             <div class="row">
 
               <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
@@ -93,7 +94,7 @@
                 <div class="form-group">
                   <label>圖示</label>
                   <div class="input-group">
-                    <input data-placement="bottomRight" class="form-control icp icp-auto" value="fa-archive" type="text" />
+                    <input name="icon" id="icon" data-placement="bottomRight" class="form-control icp icp-auto" value="fa-archive" type="text" />
                     <span class="input-group-addon"></span>
                   </div>
                 </div>      
